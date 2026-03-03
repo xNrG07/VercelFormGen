@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+  <script>
+    window.adsbygoogle = window.adsbygoogle || [];
+    window.adsbygoogle.pauseAdRequests = 1;
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5471672076791796" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefvorlagen-Generator – Kündigung, Mahnung, Widerruf &amp; mehr</title>
+<meta name="description" content="Kostenloser Briefvorlagen-Generator für Österreich und Deutschland. Vorlage wählen, Felder ausfüllen, Schreiben als PDF drucken oder als Text kopieren.">
+<link rel="canonical" href="https://www.vorlagen-generator.at/generator.html">
+<meta property="og:title" content="Briefvorlagen-Generator AT/DE">
+<meta property="og:description" content="Kündigung, Mängelrüge, Mahnung und mehr – kostenlos generieren.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<nav class="site-nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo" aria-label="Vorlagen-Generator Startseite">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      Vorlagen<span>Generator</span>
+    </a>
+    <button class="nav-burger" id="nav-burger" aria-controls="nav-menu" aria-expanded="false" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="/index.html" >Start</a></li>
+        <li><a href="/generator.html" aria-current="page">Generator</a></li>
+        <li><a href="/vorlagen/kuendigung.html">Vorlagen</a></li>
+        <li class="nav-sep" aria-hidden="true"></li>
+        <li><a href="/impressum.html" class="nav-secondary">Impressum</a></li>
+        <li><a href="/datenschutz.html" class="nav-secondary">Datenschutz</a></li>
+      </ul>
+      <a href="/generator.html" class="nav-cta nav-cta-mobile">Vorlage erstellen</a>
+    </div>
+    <a href="/generator.html" class="nav-cta nav-cta-desktop">Vorlage erstellen</a>
+  </div>
+</nav>
+<div style="background:var(--surface);border-bottom:1px solid var(--border);padding:.6rem 1.5rem;">
+  <div class="container" style="display:flex;align-items:center;gap:.6rem">
+    <a href="/index.html" style="color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:500">&larr; Alle Vorlagen</a>
+    <span style="color:var(--border-s);font-size:.82rem">|</span>
+    <span style="color:var(--text);font-size:.82rem;font-weight:600">Generator</span>
+  </div>
+</div>
+<main id="main-content">
+  <div class="generator-wrap">
+    <!-- Sidebar: Template-Auswahl -->
+    <aside class="gen-sidebar" aria-label="Vorlagenauswahl">
+      <h3>Vorlage wählen</h3>
+      <label for="sidebar-search" class="sr-only">Vorlagen durchsuchen</label>
+      <input type="search" class="sidebar-search" id="sidebar-search" placeholder="Suchen …" aria-label="Vorlagen durchsuchen">
+      <ul class="tpl-list" id="tpl-list" role="listbox" aria-label="Verfügbare Vorlagen"></ul>
+      <p id="no-results" style="display:none;font-family:var(--ff-ui);font-size:.85rem;color:var(--c-muted);padding:.5rem 0">Keine Vorlage gefunden.</p>
+    </aside>
+
+    <!-- Formular -->
+    <section class="form-col" aria-labelledby="gen-form-title">
+      <h2 id="gen-form-title">Vorlage auswählen</h2>
+      <p class="form-sub" id="gen-form-sub">Wählen Sie links eine Vorlage, um das Formular zu sehen.</p>
+      <div class="disclaimer" style="margin:0 0 1rem"><strong>⚖️ Hinweis:</strong> Diese Vorlagen sind rechtlich neutrale Textmuster und stellen keine Rechtsberatung dar.</div>
+      <div id="gen-form-fields"></div>
+    </section>
+
+    <!-- Vorschau -->
+    <section class="preview-col" aria-label="Vorschau des generierten Schreibens">
+      <div class="preview-box">
+        <div class="preview-header">
+          <span>Vorschau</span>
+          <span style="font-weight:400;font-size:.78rem">Aktualisiert sich automatisch</span>
+        </div>
+        <div class="preview-content empty" id="preview-content" tabindex="0" aria-label="Vorschau des Schreibens">Wählen Sie links eine Vorlage und füllen Sie das Formular aus – Ihr Schreiben erscheint hier.</div>
+      </div>
+
+      <!-- Ad Slot 2: unterhalb der Preview -->
+      <div style="margin-top:.5rem">
+        <!-- AdSense Unit hier einfügen (unterhalb Preview) -->
+        <div class="ad-slot" style="margin:0" data-label="Werbung – AdSense Unit (unterhalb Vorschau)" role="complementary" aria-label="Werbeplatz"></div>
+      </div>
+
+      <div class="action-row" role="group" aria-label="Aktionen" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.6rem;padding:1rem 1.25rem">
+        <button class="btn btn-primary" id="btn-copy" aria-label="Text in Zwischenablage kopieren" style="justify-content:center">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Kopieren
+        </button>
+        <button class="btn btn-secondary" id="btn-print" aria-label="Schreiben drucken oder als PDF speichern" style="justify-content:center">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Als PDF drucken
+        </button>
+        <button class="btn btn-secondary" id="btn-txt" aria-label="Als Textdatei herunterladen" style="justify-content:center">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Als .txt speichern
+        </button>
+      </div>
+  </div>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+    <div class="footer-brand">
+      <strong>VorlagenGenerator</strong>
+      <p>Kostenlose Briefvorlagen f&uuml;r &Ouml;sterreich und Deutschland.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Vorlagen</h4>
+      <ul>
+        <li><a href="/vorlagen/kuendigung.html">K&uuml;ndigung</a></li>
+        <li><a href="/vorlagen/maengelruege.html">M&auml;ngelr&uuml;ge</a></li>
+        <li><a href="/vorlagen/widerruf-onlinekauf.html">Widerruf</a></li>
+        <li><a href="/vorlagen/mahnung.html">Mahnung</a></li>
+        <li><a href="/vorlagen/dsgvo-auskunft.html">DSGVO-Auskunft</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="/impressum.html">Impressum</a></li>
+        <li><a href="/datenschutz.html">Datenschutz</a></li>
+        <li><a href="/kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 VorlagenGenerator &ndash; Alle Angaben ohne Gew&auml;hr</span>
+    <span>Kein Ersatz f&uuml;r Rechtsberatung &middot; <a href="/impressum.html">Impressum</a></span>
+  </div>
+</footer>
+<div class="consent-bar" id="consent-bar" role="dialog" aria-label="Datenschutz-Einstellungen">
+  <p>Wir verwenden technisch notwendige Einstellungen und &ndash; mit Ihrer Zustimmung &ndash; Google AdSense. <a href="/datenschutz.html">Datenschutz</a></p>
+  <div class="consent-actions">
+    <button class="consent-btn consent-btn-accept">Zustimmen</button>
+    <button class="consent-btn consent-btn-reject">Nur notwendig</button>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/assets/app.js"></script>
+</body>
+</html>
