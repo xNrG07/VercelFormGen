@@ -139,6 +139,7 @@ nav.breadcrumb a:hover,.breadcrumb a:hover{color:var(--accent)}
 .faq-q[aria-expanded="true"] .faq-icon{transform:rotate(45deg);color:var(--accent)}
 .faq-a{display:none;border:1.5px solid var(--accent);border-top:none;border-bottom-left-radius:var(--r-md);border-bottom-right-radius:var(--r-md);background:var(--surface)}
 .faq-a[aria-hidden="false"]{display:block}
+.faq-a.open{display:block}
 .faq-a-inner{padding:.9rem 1.1rem 1rem}
 .faq-a-inner p{font-size:.9rem;color:var(--muted);margin:0;line-height:1.65}
 
