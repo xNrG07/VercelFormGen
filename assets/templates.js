@@ -446,15 +446,15 @@ Mit freundlichen Grüßen
   {
     id: "widerspruch-bescheid",
     title: "Widerspruch gegen Bescheid (DE)",
-    description: "In Deutschland: fristgerecht Widerspruch gegen einen Verwaltungsbescheid einlegen.",
+    description: "Deutschland: Gegen einen behördlichen Bescheid fristgerecht Widerspruch einlegen (AT: häufig \"Beschwerde\" – bitte prüfen).",
     icon: "🏛️",
-    category: "Behörden (DE)",
+    category: "Behörden",
     url: "generator.html?template=widerspruch-bescheid",
     requiredFields: [
       { id: "absender_name",             label: "Ihr vollständiger Name",                type: "text",     placeholder: "Peter Mustermann" },
-      { id: "absender_adresse",          label: "Ihre Adresse",                          type: "text",     placeholder: "Musterstraße 10, 10115 Berlin" },
-      { id: "empfaenger_name",           label: "Behörde / Amt",                         type: "text",     placeholder: "Finanzamt Berlin" },
-      { id: "empfaenger_adresse",        label: "Adresse der Behörde",                   type: "text",     placeholder: "Musterweg 1, 10115 Berlin" },
+      { id: "absender_adresse",          label: "Ihre Adresse",                          type: "text",     placeholder: "Alpenstraße 3, 5020 Salzburg" },
+      { id: "empfaenger_name",           label: "Behörde / Amt",                         type: "text",     placeholder: "Finanzamt Salzburg-Stadt" },
+      { id: "empfaenger_adresse",        label: "Adresse der Behörde",                   type: "text",     placeholder: "Aignerstraße 10, 5026 Salzburg" },
       { id: "bescheid_datum",            label: "Datum des Bescheids",                   type: "text",     placeholder: "10.02.2026" },
       { id: "bescheid_nr",               label: "Geschäftszahl / Aktenzeichen",          type: "text",     placeholder: "GZ 123-456/2026" },
       { id: "widerspruch_begruendung",   label: "Begründung des Widerspruchs",           type: "textarea", placeholder: "Der Bescheid ist aus folgenden Gründen unrichtig: ..." }

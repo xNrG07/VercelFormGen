@@ -1,45 +1,25 @@
+
 import { TEMPLATES, getTemplateById } from './templates.js';
+
+(window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
 
 const CONSENT_KEY = 'vg_consent';
 
-// Replace with your own AdSense Publisher ID (ca-pub-XXXX...) before going live.
-const ADSENSE_CLIENT = 'ca-pub-5471672076791796';
-
-function ensureAdSenseScriptPresent() {
-  if (document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) return;
-
-  const s = document.createElement('script');
-  s.async = true;
-  s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`;
-  s.crossOrigin = 'anonymous';
-  document.head.appendChild(s);
-}
-
-function pauseAdRequests() {
-  window.adsbygoogle = window.adsbygoogle || [];
-  window.adsbygoogle.pauseAdRequests = 1;
-}
-
-function resumeAdRequests() {
-  window.adsbygoogle = window.adsbygoogle || [];
-  window.adsbygoogle.pauseAdRequests = 0;
-  try { window.adsbygoogle.push({}); } catch (e) {}
-}
-
 function getConsent() {
-  try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  try { return localStorage.getItem(CONSENT_KEY); } catch(e) { return null; }
 }
 function setConsent(val) {
-  try { localStorage.setItem(CONSENT_KEY, val); } catch (e) {}
+  try { localStorage.setItem(CONSENT_KEY, val); } catch(e) {}
 }
 
 function applyConsent(choice) {
-  // Default is paused. We only resume after explicit consent.
   if (choice === 'accept') {
-    ensureAdSenseScriptPresent();
-    resumeAdRequests();
+    // Personalisierte Werbung erlaubt
+    (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
   } else {
-    pauseAdRequests();
+    // Non-personalized ads oder pausiert lassen
+    // (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
+    (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
   }
 }
 
@@ -47,18 +27,17 @@ function initConsent() {
   const saved = getConsent();
   if (saved) { applyConsent(saved); return; }
 
-  pauseAdRequests();
-
   const bar = document.getElementById('consent-bar');
   if (!bar) return;
   setTimeout(() => bar.classList.add('visible'), 600);
 
-  bar.querySelector('.consent-btn-accept')?.addEventListener('click', () => {
+  bar.querySelector('.consent-btn-accept').addEventListener('click', () => {
     setConsent('accept'); applyConsent('accept'); bar.classList.remove('visible');
   });
-  bar.querySelector('.consent-btn-reject')?.addEventListener('click', () => {
+  bar.querySelector('.consent-btn-reject').addEventListener('click', () => {
     setConsent('reject'); applyConsent('reject'); bar.classList.remove('visible');
   });
+
 }
 
 /* ── Mobile Navigation ──────────────────────────────────── */
