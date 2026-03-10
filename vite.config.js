@@ -15,6 +15,7 @@ export default defineConfig({
         impressum:           resolve(__dirname, 'impressum.html'),
         datenschutz:         resolve(__dirname, 'datenschutz.html'),
         kontakt:             resolve(__dirname, 'kontakt.html'),
+        hinweise:            resolve(__dirname, 'hinweise.html'),
         notfound:            resolve(__dirname, '404.html'),
         kuendigung:          resolve(__dirname, 'vorlagen/kuendigung.html'),
         maengelruege:        resolve(__dirname, 'vorlagen/maengelruege.html'),
