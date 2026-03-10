@@ -1,44 +1,8 @@
 
 import { TEMPLATES, getTemplateById } from './templates.js';
 
-(window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
-
-const CONSENT_KEY = 'vg_consent';
-
-function getConsent() {
-  try { return localStorage.getItem(CONSENT_KEY); } catch(e) { return null; }
-}
-function setConsent(val) {
-  try { localStorage.setItem(CONSENT_KEY, val); } catch(e) {}
-}
-
-function applyConsent(choice) {
-  if (choice === 'accept') {
-    // Personalisierte Werbung erlaubt
-    (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
-  } else {
-    // Non-personalized ads oder pausiert lassen
-    // (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-    (window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
-  }
-}
-
-function initConsent() {
-  const saved = getConsent();
-  if (saved) { applyConsent(saved); return; }
-
-  const bar = document.getElementById('consent-bar');
-  if (!bar) return;
-  setTimeout(() => bar.classList.add('visible'), 600);
-
-  bar.querySelector('.consent-btn-accept').addEventListener('click', () => {
-    setConsent('accept'); applyConsent('accept'); bar.classList.remove('visible');
-  });
-  bar.querySelector('.consent-btn-reject').addEventListener('click', () => {
-    setConsent('reject'); applyConsent('reject'); bar.classList.remove('visible');
-  });
-
-}
+/* AdSense is currently connected via the account verification meta tag.
+   If live ads are activated later, use a Google-certified CMP first. */
 
 /* ── Mobile Navigation ──────────────────────────────────── */
 function initNav() {
@@ -368,7 +332,6 @@ function initContact() {
 
 /* ── Init all ───────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
-  initConsent();
   initNav();
   initFAQ();
   initIndexSearch();

@@ -446,7 +446,7 @@ Mit freundlichen Grüßen
   {
     id: "widerspruch-bescheid",
     title: "Widerspruch gegen Bescheid (DE)",
-    description: "Deutschland: Gegen einen behördlichen Bescheid fristgerecht Widerspruch einlegen (AT: häufig \"Beschwerde\" – bitte prüfen).",
+    description: "Deutschland: Gegen einen behördlichen Bescheid fristgerecht Widerspruch einlegen. In Österreich ist stattdessen oft eine Beschwerde vorgesehen.",
     icon: "🏛️",
     category: "Behörden",
     url: "generator.html?template=widerspruch-bescheid",
@@ -513,7 +513,7 @@ Mit freundlichen Grüßen
   ,{
     id: "mietminderung",
     title: "Mietminderung",
-    description: "Miete wegen eines Wohnungsmangels rechtlich korrekt mindern – fuer Oesterreich und Deutschland.",
+    description: "Wohnungsmangel melden und eine Mietminderung vorbereiten – mit allgemeinen Hinweisen fuer Oesterreich und Deutschland.",
     icon: "\u{1F3E0}",
     category: "Wohnen",
     url: "vorlagen/mietminderung.html",
