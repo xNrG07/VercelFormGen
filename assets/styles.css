@@ -230,7 +230,10 @@ aside{display:flex;flex-direction:column;gap:1.25rem}
 .footer-col a{color:#C8C2BA;text-decoration:none;font-size:.875rem;transition:color var(--t)}
 .footer-col a:hover{color:#fff}
 .footer-bottom{border-top:1px solid #242018;max-width:var(--w);margin:0 auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.78rem;color:#5A5449}
-.footer-bottom a{color:#7A9BC4}
+.footer-bottom span{word-break:break-word;min-width:0}
+.footer-bottom a{color:#7A9BC4;white-space:nowrap}
+.footer-bottom a:hover{color:#93b8df}
+@media(max-width:640px){.footer-bottom{flex-direction:column;align-items:flex-start;gap:.4rem}}
 
 /* CONSENT */
 .consent-actions{display:flex;gap:.5rem;flex-wrap:wrap}
