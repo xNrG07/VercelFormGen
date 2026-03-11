@@ -540,7 +540,7 @@ Mit freundlichen Grüßen
 {vermieter_name}
 {vermieter_adresse}
 
-Betreff: Maengelanzeige und Mietminderung – {absender_adresse}
+Betreff: Maengelanzeige betreffend Mietobjekt – {absender_adresse}
 
 Sehr geehrte Damen und Herren,
 
@@ -552,7 +552,7 @@ Der Mangel besteht seit {mangel_seit} und beeintraechtigt die vertragsgemaesse N
 
 Ich fordere Sie auf, den Mangel bis {frist} zu beheben.
 
-Aufgrund des Mangels mindere ich die Miete ab sofort um {minderung_prozent}, bis zur vollstaendigen Behebung.
+Aufgrund des Mangels halte ich eine Mietzins- bzw. Mietminderung in Hoehe von {minderung_prozent} fuer angemessen. Ich ersuche Sie um rasche Behebung und behalte mir vor, meine Rechte nach fruchtlosem Ablauf der Frist entsprechend geltend zu machen.
 
 Mit freundlichen Gruessen
 
@@ -565,7 +565,7 @@ Mit freundlichen Gruessen
 {vermieter_name}
 {vermieter_adresse}
 
-Betreff: MAENGELANZEIGE UND MIETMINDERUNG – {absender_adresse}
+Betreff: MAENGELANZEIGE betreffend Mietobjekt – {absender_adresse}
 
 Sehr geehrte Damen und Herren,
 
@@ -577,7 +577,7 @@ Dieser Mangel besteht seit {mangel_seit} und verletzt die Pflicht zur Ueberlassu
 
 Ich setze Ihnen eine Frist bis {frist} zur vollstaendigen Behebung des Mangels.
 
-Ich mache von meinem gesetzlichen Recht auf Mietminderung Gebrauch und kuerze die Miete ab sofort um {minderung_prozent}, bis zur vollstaendigen Behebung.
+Fuer die Dauer der erheblichen Beeintraechtigung kuendige ich an, eine angemessene Mietzins- bzw. Mietminderung in Hoehe von {minderung_prozent} geltend zu machen. Eine endgueltige rechtliche Bewertung des Einzelfalls bleibt vorbehalten.
 
 Sollte keine Behebung erfolgen, behalte ich mir weitere rechtliche Schritte ausdruecklich vor.
 
